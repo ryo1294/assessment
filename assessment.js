@@ -20,13 +20,11 @@ assessmentButton.onclick = () => {
     return;
   }
   
-   userNameInput.onkeydown = (event) => {
-     // Enterキーが押されたか
-    if (event.key === 'Enter') {
-      //押されたのならonclickと同じ働きをする
-      assessmentButton.onclick();
-    }
-  };
+ userNameInput.onkeydown = (event) => {
+  if (event.key === 'Enter') {
+    assessmentButton.onclick();
+   }
+ };
 
   // 診断結果表示エリアの作成
   removeAllChildren(resultDivided);
